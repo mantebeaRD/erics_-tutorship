@@ -1,0 +1,38 @@
+---
+title: "mentorship2"
+author: "Abena Mantebea"
+date: "10/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+Hello Abena, hope you are doing well? This is R Markdown. You are basically doing everything you did in your R script over here. You can see that you installed and loaded the packages used in the Rscript and included another; 'here'. You learnt about R chunks which can be located at the top right of this page (the green C button). You worked in these chunks. Ensure your cursor is not in a chunk when creating a new chunk. After installing the packages, you imported from your working directory, the folder 'data' and the file 'cancer_data.csv' and assigned it to the object 'mantebs'. You went further to input the skim and glimpse commands but you didn't run them. Such a beautiful work done here Abena. Thank you RD Eric Komla Anku. 
+
+```{r}
+# install and load packages
+pacman::p_load (tidyverse,skimr,rio,here)
+```
+
+
+```{r}
+mantebs<-import(here("data","cancer_data.csv"))
+```
+
+
+```{r}
+#skim dataset
+skim(mantebs)
+```
+
+
+```{r}
+#glimpse dataset
+glimpse(mantebs)
+
+```
+
